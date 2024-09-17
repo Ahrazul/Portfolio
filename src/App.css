@@ -1,0 +1,9 @@
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+  font-family: 'chivo', sans-serif;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+}

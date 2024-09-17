@@ -1,0 +1,61 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+}
+
+.menu_middle_buttons button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    position: relative; 
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    font-size: 15px;
+}
+
+.menu_middle_buttons button::before {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    width: 0; 
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.5s ease, left 0.5s ease; 
+}
+
+.menu_middle_buttons button:hover::before {
+    width: 100%; 
+    left: 0; 
+}
+
+.menu_contact_button button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu_contact_button button:hover {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: rgb(20, 20, 20);
+}
+
+.menu_middle_buttons {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.menu_contact_button {
+    display: flex;
+}
